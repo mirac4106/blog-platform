@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Blog Sitesi</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome (ikonlar için) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">Modern Blog Sitesi</a>
+      <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#">Anasayfa</a></li>
+        <li><a href="#">Yazılar</a></li>
+        <li><a href="#">Hakkımda</a></li>
+        <li><a href="#">İletişim</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Modern Blog Sitesi</h1>
+      <p>İçerik odaklı, şık ve kullanıcı dostu </p>
+    </div>
+  </header>
+
+  <!-- Yazar Profili -->
+  <section class="author-profile">
+    <div>
+      <h3>Miraç Kutal</h3>
+      <p>Yazılım geliştirici, içerik üreticisi ve açık kaynak meraklısı.</p>
+      <div class="social-links">
+        <a href="https://github.com/mirac4106"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/mirac-kutal-5b2018331/"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Arama -->
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Yazı ara...">
+  </div>
+
+  <!-- Blog Yazıları -->
+  <main class="container">
+    <article class="post" data-tags="teknoloji, web">
+      <span class="category">Teknoloji</span>
+      <h2>Web Geliştirme Geleceğine Doğru</h2>
+      <p class="excerpt">
+        Web geliştirme dünyası hızla değişiyor. Yeni framework'ler, araçlar ve yaklaşımlar...
+      </p>
+      <a href="#" class="read-more">Devamını Oku →</a>
+      <div class="post-meta">
+        <span>10 Nisan 2025</span>
+        <span>3 okuma</span>
+      </div>
+    </article>
+
+    <article class="post" data-tags="tasarım, ui">
+      <span class="category">Tasarım</span>
+      <h2>Kullanıcı Deneyimi Neden Bu Kadar Önemli?</h2>
+      <p class="excerpt">
+        Güzel bir arayüz yetmez; kullanıcı gerçekten ne hissediyor? Nasıl hareket ediyor?
+      </p>
+      <a href="#" class="read-more">Devamını Oku →</a>
+      <div class="post-meta">
+        <span>8 Nisan 2025</span>
+        <span>4 okuma</span>
+      </div>
+    </article>
+
+    <article class="post" data-tags="javascript, kod">
+      <span class="category">Kod</span>
+      <h2>JavaScript'te Modern Özellikler</h2>
+      <p class="excerpt">
+        ES6+ ile gelen ok fonksiyonları, destructuring, async/await gibi özellikler...
+      </p>
+      <a href="#" class="read-more">Devamını Oku →</a>
+      <div class="post-meta">
+        <span>5 Nisan 2025</span>
+        <span>5 okuma</span>
+      </div>
+    </article>
+  </main>
+
+  <!-- Yukarı Çık Butonu -->
+  <button id="backToTop" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- 🌙/☀️ GECE MODU BUTONU (SABİT, SAĞ ÜST KÖŞEDE) -->
+  <button id="themeToggle" class="theme-toggle-fixed" aria-label="Tema değiştir">
+    <i class="fas fa-sun"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
